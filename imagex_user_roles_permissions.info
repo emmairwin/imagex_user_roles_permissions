@@ -1,0 +1,10 @@
+name = ImageX: User Roles and Permissions
+description = Provides the base user roles and permissions.
+core = 7.x
+package = ImageX
+version = 7.x-1.0
+project = imagex_user_roles_permissions
+dependencies[] = features
+features[features_api][] = api:1
+features[user_role][] = administrator
+features[user_role][] = content editor
