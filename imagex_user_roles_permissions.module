@@ -1,5 +1,7 @@
 <?php
 /**
  * @file
- * Drupal needs this blank file.
+ * Code for the ImageX: User Roles and Permissions feature.
  */
+
+include_once 'imagex_user_roles_permissions.features.inc';
