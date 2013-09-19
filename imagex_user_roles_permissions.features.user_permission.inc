@@ -15,9 +15,23 @@ function imagex_user_roles_permissions_user_default_permissions() {
     'name' => 'access administration pages',
     'roles' => array(
       'Administrator' => 'Administrator',
-      'System Administrator' => 'System Administrator',
+      'Content Administrator' => 'Content Administrator',
     ),
     'module' => 'system',
+  );
+
+  // Exported permission: access comments.
+  $permissions['access comments'] = array(
+    'name' => 'access comments',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+      'Content Administrator' => 'Content Administrator',
+      'Content Creator' => 'Content Creator',
+      'Content Manager' => 'Content Manager',
+      'Content Moderator' => 'Content Moderator',
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'comment',
   );
 
   // Exported permission: access content.
@@ -25,7 +39,7 @@ function imagex_user_roles_permissions_user_default_permissions() {
     'name' => 'access content',
     'roles' => array(
       'Administrator' => 'Administrator',
-      'System Administrator' => 'System Administrator',
+      'Content Administrator' => 'Content Administrator',
       'authenticated user' => 'authenticated user',
     ),
     'module' => 'node',
@@ -36,7 +50,7 @@ function imagex_user_roles_permissions_user_default_permissions() {
     'name' => 'access content overview',
     'roles' => array(
       'Administrator' => 'Administrator',
-      'System Administrator' => 'System Administrator',
+      'Content Administrator' => 'Content Administrator',
     ),
     'module' => 'node',
   );
@@ -46,7 +60,7 @@ function imagex_user_roles_permissions_user_default_permissions() {
     'name' => 'access site in maintenance mode',
     'roles' => array(
       'Administrator' => 'Administrator',
-      'System Administrator' => 'System Administrator',
+      'Content Administrator' => 'Content Administrator',
     ),
     'module' => 'system',
   );
@@ -56,9 +70,19 @@ function imagex_user_roles_permissions_user_default_permissions() {
     'name' => 'access site reports',
     'roles' => array(
       'Administrator' => 'Administrator',
-      'System Administrator' => 'System Administrator',
+      'Content Administrator' => 'Content Administrator',
     ),
     'module' => 'system',
+  );
+
+  // Exported permission: access toolbar.
+  $permissions['access toolbar'] = array(
+    'name' => 'access toolbar',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+      'Content Administrator' => 'Content Administrator',
+    ),
+    'module' => 'toolbar',
   );
 
   // Exported permission: access user profiles.
@@ -66,7 +90,7 @@ function imagex_user_roles_permissions_user_default_permissions() {
     'name' => 'access user profiles',
     'roles' => array(
       'Administrator' => 'Administrator',
-      'System Administrator' => 'System Administrator',
+      'Content Administrator' => 'Content Administrator',
     ),
     'module' => 'user',
   );
@@ -76,9 +100,32 @@ function imagex_user_roles_permissions_user_default_permissions() {
     'name' => 'administer actions',
     'roles' => array(
       'Administrator' => 'Administrator',
-      'System Administrator' => 'System Administrator',
+      'Content Administrator' => 'Content Administrator',
     ),
     'module' => 'system',
+  );
+
+  // Exported permission: administer bean types.
+  $permissions['administer bean types'] = array(
+    'name' => 'administer bean types',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+      'Content Administrator' => 'Content Administrator',
+    ),
+    'module' => 'bean',
+  );
+
+  // Exported permission: administer comments.
+  $permissions['administer comments'] = array(
+    'name' => 'administer comments',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+      'Content Administrator' => 'Content Administrator',
+      'Content Creator' => 'Content Creator',
+      'Content Manager' => 'Content Manager',
+      'Content Moderator' => 'Content Moderator',
+    ),
+    'module' => 'comment',
   );
 
   // Exported permission: administer content types.
@@ -86,9 +133,37 @@ function imagex_user_roles_permissions_user_default_permissions() {
     'name' => 'administer content types',
     'roles' => array(
       'Administrator' => 'Administrator',
-      'System Administrator' => 'System Administrator',
+      'Content Administrator' => 'Content Administrator',
     ),
     'module' => 'node',
+  );
+
+  // Exported permission: administer features.
+  $permissions['administer features'] = array(
+    'name' => 'administer features',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+      'Content Administrator' => 'Content Administrator',
+    ),
+    'module' => 'features',
+  );
+
+  // Exported permission: administer file types.
+  $permissions['administer file types'] = array(
+    'name' => 'administer file types',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+    ),
+    'module' => 'file_entity',
+  );
+
+  // Exported permission: administer files.
+  $permissions['administer files'] = array(
+    'name' => 'administer files',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+    ),
+    'module' => 'file_entity',
   );
 
   // Exported permission: administer meta tags.
@@ -96,8 +171,8 @@ function imagex_user_roles_permissions_user_default_permissions() {
     'name' => 'administer meta tags',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Content Administrator' => 'Content Administrator',
       'Content Creator' => 'Content Creator',
-      'System Administrator' => 'System Administrator',
     ),
     'module' => 'metatag',
   );
@@ -107,7 +182,7 @@ function imagex_user_roles_permissions_user_default_permissions() {
     'name' => 'administer modules',
     'roles' => array(
       'Administrator' => 'Administrator',
-      'System Administrator' => 'System Administrator',
+      'Content Administrator' => 'Content Administrator',
     ),
     'module' => 'system',
   );
@@ -117,9 +192,19 @@ function imagex_user_roles_permissions_user_default_permissions() {
     'name' => 'administer nodes',
     'roles' => array(
       'Administrator' => 'Administrator',
-      'System Administrator' => 'System Administrator',
+      'Content Administrator' => 'Content Administrator',
     ),
     'module' => 'node',
+  );
+
+  // Exported permission: administer pathauto.
+  $permissions['administer pathauto'] = array(
+    'name' => 'administer pathauto',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+      'Content Administrator' => 'Content Administrator',
+    ),
+    'module' => 'pathauto',
   );
 
   // Exported permission: administer permissions.
@@ -127,9 +212,27 @@ function imagex_user_roles_permissions_user_default_permissions() {
     'name' => 'administer permissions',
     'roles' => array(
       'Administrator' => 'Administrator',
-      'System Administrator' => 'System Administrator',
+      'Content Administrator' => 'Content Administrator',
     ),
     'module' => 'user',
+  );
+
+  // Exported permission: administer rules.
+  $permissions['administer rules'] = array(
+    'name' => 'administer rules',
+    'roles' => array(),
+    'module' => 'rules',
+  );
+
+  // Exported permission: administer scheduler.
+  $permissions['administer scheduler'] = array(
+    'name' => 'administer scheduler',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+      'Content Administrator' => 'Content Administrator',
+      'Content Manager' => 'Content Manager',
+    ),
+    'module' => 'scheduler',
   );
 
   // Exported permission: administer site configuration.
@@ -137,7 +240,7 @@ function imagex_user_roles_permissions_user_default_permissions() {
     'name' => 'administer site configuration',
     'roles' => array(
       'Administrator' => 'Administrator',
-      'System Administrator' => 'System Administrator',
+      'Content Administrator' => 'Content Administrator',
     ),
     'module' => 'system',
   );
@@ -147,9 +250,19 @@ function imagex_user_roles_permissions_user_default_permissions() {
     'name' => 'administer software updates',
     'roles' => array(
       'Administrator' => 'Administrator',
-      'System Administrator' => 'System Administrator',
+      'Content Administrator' => 'Content Administrator',
     ),
     'module' => 'system',
+  );
+
+  // Exported permission: administer taxonomy.
+  $permissions['administer taxonomy'] = array(
+    'name' => 'administer taxonomy',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+      'Content Administrator' => 'Content Administrator',
+    ),
+    'module' => 'taxonomy',
   );
 
   // Exported permission: administer themes.
@@ -157,9 +270,19 @@ function imagex_user_roles_permissions_user_default_permissions() {
     'name' => 'administer themes',
     'roles' => array(
       'Administrator' => 'Administrator',
-      'System Administrator' => 'System Administrator',
+      'Content Administrator' => 'Content Administrator',
     ),
     'module' => 'system',
+  );
+
+  // Exported permission: administer url aliases.
+  $permissions['administer url aliases'] = array(
+    'name' => 'administer url aliases',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+      'Content Administrator' => 'Content Administrator',
+    ),
+    'module' => 'path',
   );
 
   // Exported permission: administer users.
@@ -167,10 +290,20 @@ function imagex_user_roles_permissions_user_default_permissions() {
     'name' => 'administer users',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Content Administrator' => 'Content Administrator',
       'Content Manager' => 'Content Manager',
-      'System Administrator' => 'System Administrator',
     ),
     'module' => 'user',
+  );
+
+  // Exported permission: administer views.
+  $permissions['administer views'] = array(
+    'name' => 'administer views',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+      'Content Administrator' => 'Content Administrator',
+    ),
+    'module' => 'views',
   );
 
   // Exported permission: bypass node access.
@@ -178,9 +311,16 @@ function imagex_user_roles_permissions_user_default_permissions() {
     'name' => 'bypass node access',
     'roles' => array(
       'Administrator' => 'Administrator',
-      'System Administrator' => 'System Administrator',
+      'Content Administrator' => 'Content Administrator',
     ),
     'module' => 'node',
+  );
+
+  // Exported permission: bypass rules access.
+  $permissions['bypass rules access'] = array(
+    'name' => 'bypass rules access',
+    'roles' => array(),
+    'module' => 'rules',
   );
 
   // Exported permission: cancel account.
@@ -198,6 +338,7 @@ function imagex_user_roles_permissions_user_default_permissions() {
     'name' => 'change own username',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Content Administrator' => 'Content Administrator',
     ),
     'module' => 'user',
   );
@@ -207,25 +348,31 @@ function imagex_user_roles_permissions_user_default_permissions() {
     'name' => 'create directory content',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Content Administrator' => 'Content Administrator',
       'Content Creator' => 'Content Creator',
       'Content Manager' => 'Content Manager',
-      'System Administrator' => 'System Administrator',
     ),
     'module' => 'node',
   );
 
-  // Exported permission: create event content.
-  $permissions['create event content'] = array(
-    'name' => 'create event content',
+  // Exported permission: create url aliases.
+  $permissions['create url aliases'] = array(
+    'name' => 'create url aliases',
     'roles' => array(
       'Administrator' => 'Administrator',
-      'Content Creator' => 'Content Creator',
-      'Content Manager' => 'Content Manager',
-      'Content Moderator' => 'Content Moderator',
-      'System Administrator' => 'System Administrator',
-      'authenticated user' => 'authenticated user',
+      'Content Administrator' => 'Content Administrator',
     ),
-    'module' => 'node',
+    'module' => 'path',
+  );
+
+  // Exported permission: delete any files.
+  $permissions['delete any files'] = array(
+    'name' => 'delete any files',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+      'Content Administrator' => 'Content Administrator',
+    ),
+    'module' => 'file_entity',
   );
 
   // Exported permission: delete revisions.
@@ -233,9 +380,19 @@ function imagex_user_roles_permissions_user_default_permissions() {
     'name' => 'delete revisions',
     'roles' => array(
       'Administrator' => 'Administrator',
-      'System Administrator' => 'System Administrator',
+      'Content Administrator' => 'Content Administrator',
     ),
     'module' => 'node',
+  );
+
+  // Exported permission: edit any files.
+  $permissions['edit any files'] = array(
+    'name' => 'edit any files',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+      'Content Administrator' => 'Content Administrator',
+    ),
+    'module' => 'file_entity',
   );
 
   // Exported permission: edit meta tags.
@@ -243,30 +400,85 @@ function imagex_user_roles_permissions_user_default_permissions() {
     'name' => 'edit meta tags',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Content Administrator' => 'Content Administrator',
       'Content Creator' => 'Content Creator',
-      'System Administrator' => 'System Administrator',
     ),
     'module' => 'metatag',
+  );
+
+  // Exported permission: edit own comments.
+  $permissions['edit own comments'] = array(
+    'name' => 'edit own comments',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+      'Content Administrator' => 'Content Administrator',
+    ),
+    'module' => 'comment',
+  );
+
+  // Exported permission: edit own files.
+  $permissions['edit own files'] = array(
+    'name' => 'edit own files',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+      'Content Administrator' => 'Content Administrator',
+    ),
+    'module' => 'file_entity',
   );
 
   // Exported permission: import media.
   $permissions['import media'] = array(
     'name' => 'import media',
     'roles' => array(
-      'System Administrator' => 'System Administrator',
+      'Content Administrator' => 'Content Administrator',
     ),
     'module' => 'media',
   );
 
+  // Exported permission: manage features.
+  $permissions['manage features'] = array(
+    'name' => 'manage features',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+      'Content Administrator' => 'Content Administrator',
+    ),
+    'module' => 'features',
+  );
+
+  // Exported permission: post comments.
+  $permissions['post comments'] = array(
+    'name' => 'post comments',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+      'Content Administrator' => 'Content Administrator',
+      'Content Creator' => 'Content Creator',
+      'Content Manager' => 'Content Manager',
+      'Content Moderator' => 'Content Moderator',
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'comment',
+  );
 
   // Exported permission: revert revisions.
   $permissions['revert revisions'] = array(
     'name' => 'revert revisions',
     'roles' => array(
       'Administrator' => 'Administrator',
-      'System Administrator' => 'System Administrator',
+      'Content Administrator' => 'Content Administrator',
     ),
     'module' => 'node',
+  );
+
+  // Exported permission: schedule (un)publishing of nodes.
+  $permissions['schedule (un)publishing of nodes'] = array(
+    'name' => 'schedule (un)publishing of nodes',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+      'Content Administrator' => 'Content Administrator',
+      'Content Manager' => 'Content Manager',
+      'Content Moderator' => 'Content Moderator',
+    ),
+    'module' => 'scheduler',
   );
 
   // Exported permission: select account cancellation method.
@@ -278,12 +490,34 @@ function imagex_user_roles_permissions_user_default_permissions() {
     'module' => 'user',
   );
 
+  // Exported permission: skip comment approval.
+  $permissions['skip comment approval'] = array(
+    'name' => 'skip comment approval',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+      'Content Administrator' => 'Content Administrator',
+    ),
+    'module' => 'comment',
+  );
+
+  // Exported permission: view files.
+  $permissions['view files'] = array(
+    'name' => 'view files',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+      'Content Administrator' => 'Content Administrator',
+      'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'file_entity',
+  );
+
   // Exported permission: view own unpublished content.
   $permissions['view own unpublished content'] = array(
     'name' => 'view own unpublished content',
     'roles' => array(
       'Administrator' => 'Administrator',
-      'System Administrator' => 'System Administrator',
+      'Content Administrator' => 'Content Administrator',
       'authenticated user' => 'authenticated user',
     ),
     'module' => 'node',
@@ -294,7 +528,7 @@ function imagex_user_roles_permissions_user_default_permissions() {
     'name' => 'view revisions',
     'roles' => array(
       'Administrator' => 'Administrator',
-      'System Administrator' => 'System Administrator',
+      'Content Administrator' => 'Content Administrator',
       'authenticated user' => 'authenticated user',
     ),
     'module' => 'node',
@@ -305,7 +539,7 @@ function imagex_user_roles_permissions_user_default_permissions() {
     'name' => 'view the administration theme',
     'roles' => array(
       'Administrator' => 'Administrator',
-      'System Administrator' => 'System Administrator',
+      'Content Administrator' => 'Content Administrator',
     ),
     'module' => 'system',
   );

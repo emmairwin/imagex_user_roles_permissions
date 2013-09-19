@@ -16,6 +16,12 @@ function imagex_user_roles_permissions_user_default_roles() {
     'weight' => 2,
   );
 
+  // Exported role: Content Administrator.
+  $roles['Content Administrator'] = array(
+    'name' => 'Content Administrator',
+    'weight' => 7,
+  );
+
   // Exported role: Content Creator.
   $roles['Content Creator'] = array(
     'name' => 'Content Creator',
@@ -32,12 +38,6 @@ function imagex_user_roles_permissions_user_default_roles() {
   $roles['Content Moderator'] = array(
     'name' => 'Content Moderator',
     'weight' => 4,
-  );
-
-  // Exported role: System Administrator.
-  $roles['System Administrator'] = array(
-    'name' => 'System Administrator',
-    'weight' => 7,
   );
 
   return $roles;
