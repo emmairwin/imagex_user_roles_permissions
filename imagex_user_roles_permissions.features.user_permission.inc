@@ -105,16 +105,6 @@ function imagex_user_roles_permissions_user_default_permissions() {
     'module' => 'system',
   );
 
-  // Exported permission: administer bean types.
-  $permissions['administer bean types'] = array(
-    'name' => 'administer bean types',
-    'roles' => array(
-      'Administrator' => 'Administrator',
-      'Content Administrator' => 'Content Administrator',
-    ),
-    'module' => 'bean',
-  );
-
   // Exported permission: administer comments.
   $permissions['administer comments'] = array(
     'name' => 'administer comments',
@@ -476,7 +466,6 @@ function imagex_user_roles_permissions_user_default_permissions() {
       'Administrator' => 'Administrator',
       'Content Administrator' => 'Content Administrator',
       'Content Manager' => 'Content Manager',
-      'Content Moderator' => 'Content Moderator',
     ),
     'module' => 'scheduler',
   );
